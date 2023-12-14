@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://kit.fontawesome.com/b8addb5494.js" crossorigin="anonymous"></script>
+    <script defer type="module" src="./js/controller.js"></script>
+</head>
+<body class="show-chatbot">
+    <div class="chatbot" id="chatbot">
+        <header>
+            <h2>Chatbot</h2>
+            <button class="btn-clear-chat" id="btn-clear-chat">Clear Chat</button>
+            <button class="btn-close" id="btn-close">
+                <span class="fa-solid fa-xmark"></span>
+            </button>
+        </header>
+        
+        <ul class="chatbox" id="chatbox">
+           
+        </ul>
+        <form action="/" class="send-form" id="send-form">
+            <textarea id="msg-to-send" class="msg-to-send" placeholder="Enter your message" ></textarea>
+            
+            <button type="submit" id="btn-send-msg" class="btn-send-msg">Send</button>
+            <p class="word-warning" id="word-warning">More than 10 words can't be entered</p>
+        </form>
+    </div>
+    <button class="chat-btn" id="chat-btn">
+        <span class="fa-solid fa-comment"></span>
+        <span class="fa-solid fa-xmark"></span>
+    </button>
+</main>
+</body>
+</html>
